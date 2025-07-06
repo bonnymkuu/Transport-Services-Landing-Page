@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Premium Transport Services</title>
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="container">
+      <div class="sky"></div>
+      <div class="building"></div>
+      <div class="road"></div>
+      <div class="truck">
+        <img src="./img/car2.png" alt="truck-body" />
+      </div>
+      <div class="wheel">
+        <img src="./img/wheel.png" class="second-wheel" alt="wheel" />
+        <img src="./img/wheel.png" class="first-wheel" alt="wheel" />
+      </div>
+      
+      <!-- Updated Content Overlay -->
+      <div class="content-overlay">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>Premium Transport Services</h1>
+            <p>Experience the future of transportation with our cutting-edge fleet and seamless booking system. Travel in comfort and style to your favorite destinations.</p>
+          </div>
+          
+          <!-- 3D Glass Form -->
+          <div class="glass-form-container">
+            <form class="glass-form">
+              <h2 class="form-title">Book Your Journey</h2>
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Email Address" required>
+              </div>
+              <div class="form-group">
+                <input type="text" placeholder="Destination" required>
+              </div>
+              <div class="form-group">
+                <input type="date" placeholder="Travel Date" required>
+              </div>
+              <button type="submit" class="submit-btn">Get Started</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <script>
+      // Add slight tilt effect to form on mouse move
+      document.addEventListener('mousemove', (e) => {
+        const form = document.querySelector('.glass-form');
+        const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+        const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+        form.style.transform = `rotateX(5deg) rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+      });
+      
+      // Reset form position when mouse leaves
+      document.querySelector('.glass-form-container').addEventListener('mouseleave', () => {
+        const form = document.querySelector('.glass-form');
+        form.style.transform = 'rotateX(5deg)';
+      });
+    </script>
+  </body>
+</html>
