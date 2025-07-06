@@ -1,8 +1,8 @@
-# Premium Transport Services - 3D Bus Booking Website
+# Premium Transport Services - 3D Booking Lnading Page
 
 ![Website Screenshot](./img/trp.png) *Replace with your actual screenshot*
 
-A modern, interactive bus booking website featuring 3D animated elements and glass-morphism design effects. This project combines captivating animations with practical booking functionality.
+A modern, interactive booking website Lnading Page featuring 3D animated elements and glass-morphism design effects. This project combines captivating animations with practical booking functionality.
 
 ## Features
 
